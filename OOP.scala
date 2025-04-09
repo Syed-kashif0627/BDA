@@ -76,6 +76,31 @@ class S2(a:Int,b:Int){
 // }
 
 
+// Abstract Class in Scala
+abstract class Parent1 {
+  def sample():Unit // Abstract method
+  def sample1(): Unit = { // Concrete method
+    var x: Int = 40
+    println(x)
+  }
+}
+
+class Child1 extends Parent1 {
+  def sample(): Unit = { // Overriding the abstract method
+    println("This is an abstract method")
+  }
+}
+
+// object AbstractDemo {
+//   def main(args: Array[String]): Unit = {
+//     var obj = new Child1()
+//     obj.sample()
+//     obj.sample1()
+//   }
+// }
+
+
+
 // Single Inheritance
 class Parent {
   var x: Int = 0
